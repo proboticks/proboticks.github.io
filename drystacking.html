@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <script src="main.js"></script>
+    
+    </head>
+    
+    <body>
+    
+        <nav id="nav_bar">
+            <ul class="nav_bar_buttons">
+                <li><a onclick="project_bar()" href="#" id="research_button">Research</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="index.html#teaching">Teaching</a></li>
+                <li><a href="index.html#talks">Talks</a></li>
+            </ul>
+        </nav>
+        <nav id="project_nav_bar">
+            <ul id="project_bar_buttons" style="backdrop-filter: blur(15px);">
+                <div class="buttons_table">
+                    <li><a href="coordinate.html"><img src="media/icons/coordinate.png"
+                                class="project_bar_icons" /><br>Coordinate</a></li>
+                    <li><a href="stone.html"><img src="media/icons/stone.png" class="project_bar_icons" /><br>Stone</a>
+                    </li>
+                    <li><a href="multi.html"><img src="media/icons/multi.png" class="project_bar_icons" /><br>Mix</a>
+                    </li>
+                    <li><a href="bag.html"><img src="media/icons/bag.png" class="project_bar_icons" /><br>Bag</a></li>
+                    <li><a href="drystacking.html"><img src="media/icons/wall.png"
+                                class="project_bar_icons" /><br>Dry-Stack</a>
+                    </li>
+                    <li><a href="robot.html"><img src="media/icons/robot.png" class="project_bar_icons" /><br>Robot</a>
+                    </li>
+                    <li><a href="sim.html"><img src="media/icons/sim.png" class="project_bar_icons" /><br>Simulator</a>
+                    </li>
+                </div>
+            </ul>
+    
+        </nav>
+
+
+
+    <!-- Home -->
+    <div class="page" id="home">
+        <div class="row">
+            <div class="center_column">
+                <!-- <img src="profile.png" alt="profile" id="profile" />
+                <br><br>
+                <p id="home_heading">Vivek Thangavelu</p>
+                <p id="home_heading_b">PhD Student, Cornell University</p> -->
+                <!-- <p id="home_heading_b">Tu/Th 9:30 - 10:50 | NSC 216</p> -->
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <div class="project_page">
+        <div class="project1">
+            <div class="project_card1">
+                <div class="proj_column_center">
+                    <p class="proj_h1">Dry Stacking Strategies for Automated Construction with Irregular Objects</p>
+                    <br>
+                    <a href="#movie">
+                        <p class="proj_h4">[ Watch Movie ]</Watch>
+                    </a></p>
+                    <br>
+                    <p class="proj_h3">We propose a ”next best step” planning method that autonomously chooses assembly actions to allow construction with objects that contain a significant amount of variation.
+                    </p>
+                    <br><br>
+                    <img src="media/dry_stacking/intro.png" class="center_img" style="max-width: 60%;" />
+                </div>
+            </div>
+
+            <div class="project_card6">
+                <div class="proj_column_center">
+                    <p class="proj_h2b">Raw Material Dataset</p>
+                    <br>
+                    <p class="proj_h3">We generated synthetic datasets to test our assembly
+                        planning method. </p>
+                    <br><br>
+                    <img src="media/dry_stacking/dataset.jpg" class="center_img" style="max-width: 90%;" />
+
+                </div>
+            </div>
+
+            <div class="project_card2">
+                <div class="proj_column_center">
+                    <div class="proj_column_left" style="width: 36%; padding: 20px 0px 20px 0px;">
+                        <br><br><br>
+                        <br><br>
+                        <div class="proj_text_container_small">
+                            <p class="proj_h3">A </p>
+                            <p class="proj_h3b">2D simulation framework </p>
+                            <p class="proj_h3">to test the proposed planning algorithm was developed. </p>
+                        </div>
+                    </div>
+                    <div class="proj_column_right" style="width: 64%; padding: 20px 0px 20px 0px;">
+                        <img src="media/dry_stacking/framework.png" style="max-width: 100%;" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="project_card1" style="background-color: white;">
+                <div class="proj_column_center">
+                    <p class="proj_h2b">Planning Algorithm</p>
+                    <br>
+                    <p class="proj_h3">The use of physics and geometric analysis combined with a heuristic approach has
+                        led us to develop an algorithm that functions well for a distribution of irregular objects with
+                        relatively high irregularities.</p>
+                </div>
+                <div class="proj_column_left" style="min-height: 320px;">
+                    <img src="media/dry_stacking/stone_types.png" class="center_img" style="max-width: 100%;" />
+                    <div class="proj_text_container_small">
+                        <p class="proj_h3">A strategy that includes heuristics from masonry manuals. </p>
+                    </div>
+                </div>
+                <div class="proj_column_right" style="min-height: 330px;">
+                    <img src="media/dry_stacking/object_types.jpg" class="center_img" style="max-width: 83%;" />
+                    <div class="proj_text_container_small">
+                        <p class="proj_h3">A structure built in the simulation framework using the proposed algorithm.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project_card4">
+                <div class="proj_column_center">
+                    <p class="proj_h2b">Experiments</p><br>
+                    <p class="proj_h3">The results demonstrate a feasible planning approach for building dry stacked structures that functions
+                        with reasonably high values of irregularity in the object shape distribution.
+                    </p>
+                    <img src="media/dry_stacking/structures.jpg" class="center_img" style="max-width: 100%;" />
+
+ 
+                    <div class="proj_column_left" style="min-height: 330px;">
+                        <img src="media/dry_stacking/results.jpg" class="center_img" style="max-width: 100%;" />
+                    </div>
+                    <div class="proj_column_right" style="min-height: 330px;">
+                        <div class="proj_text_container_small">
+                            <br><br><br>
+                            <br>
+                            <p class="proj_h3">It also highlight the close relationship between the planner and the object types they operate on.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="project_card6" style="background-color: black;" id="movie">
+                <div class="proj_column_center" style="padding: 60px 0px;">
+                    <!-- <p class="proj_h2b" style="color: white;">Watch Movie</p><br> -->
+                    <div class="video_container">
+                        <iframe class="responsive-iframe" src=https://www.youtube.com/embed/e-w3ckcKtzU frameborder=0
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+</body>
+
+</html>

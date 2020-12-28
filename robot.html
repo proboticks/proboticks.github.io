@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+
+    <nav id="nav_bar">
+        <ul class="nav_bar_buttons">
+            <li><a onclick="project_bar()" href="#" id="research_button">Research</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#publications">Publications</a></li>
+            <li><a href="index.html#teaching">Teaching</a></li>
+            <li><a href="index.html#talks">Talks</a></li>
+        </ul>
+    </nav>
+    <nav id="project_nav_bar">
+        <ul id="project_bar_buttons" style="backdrop-filter: blur(15px);">
+            <div class="buttons_table">
+                <li><a href="coordinate.html"><img src="media/icons/coordinate.png"
+                            class="project_bar_icons" /><br>Coordinate</a></li>
+                <li><a href="stone.html"><img src="media/icons/stone.png" class="project_bar_icons" /><br>Stone</a>
+                </li>
+                <li><a href="multi.html"><img src="media/icons/multi.png" class="project_bar_icons" /><br>Mix</a>
+                </li>
+                <li><a href="bag.html"><img src="media/icons/bag.png" class="project_bar_icons" /><br>Bag</a></li>
+                <li><a href="drystacking.html"><img src="media/icons/wall.png"
+                            class="project_bar_icons" /><br>Dry-Stack</a>
+                </li>
+                <li><a href="robot.html"><img src="media/icons/robot.png" class="project_bar_icons" /><br>Robot</a>
+                </li>
+                <li><a href="sim.html"><img src="media/icons/sim.png" class="project_bar_icons" /><br>Simulator</a>
+                </li>
+            </div>
+        </ul>
+
+    </nav>
+
+
+
+    <!-- Home -->
+    <div class="page" id="home">
+        <div class="row">
+            <div class="center_column">
+                <!-- <img src="profile.png" alt="profile" id="profile" />
+                <br><br>
+                <p id="home_heading">Vivek Thangavelu</p>
+                <p id="home_heading_b">PhD Student, Cornell University</p> -->
+                <!-- <p id="home_heading_b">Tu/Th 9:30 - 10:50 | NSC 216</p> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="project_page">
+        <div class="project1">
+            <div class="project_card1" style="margin-bottom: 0px; padding-bottom:0px;">
+                <div class="proj_column_center" style="margin-bottom: 0px; padding-bottom:0px;">
+                    <p class="proj_h1">Robot Design</p>
+                    <br>
+                    <p class="proj_h3">We developed a specialized construction algorithm and robotic system that can
+                        autonomously build motion support structures with previously unseen objects.
+                    </p>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <div class="project1" style="margin: 0px 0px; padding: 0px 0px;">
+            <img src="media/robot/image178.png" class="center_img" style="max-width: 100%" />
+        </div>
+        <div class="project1">
+            <div class="project_card2" style="background-color: white;">
+                <div class="proj_column_center">
+                    <p class="proj_h2b">Robot Versions</p><br>
+                    <p class="proj_h3">The robots are low-cost mobile manipulators made from off-the-shelf components,
+                        capable of maneuvering over irregular terrain. </p>
+                    <br>
+                    <div class="proj_column_triad" style="padding: 0px 0px">
+                        <img src="media/robot/robot_v1.jpg" class="triad_image" style="max-width: 100%;" />
+                        <br>
+                        <div class="proj_text_container_very_small">
+                            <p class="proj_h4b">Version 1</p><br>
+                            <p class="proj_h5">ALPHA</p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="proj_column_triad" style="padding: 0px 0px">
+                        <img src="media/robot/robot_v2.jpg" class="triad_image" style="max-width: 100%;" />
+                        <br>
+                        <div class="proj_text_container_very_small">
+                            <p class="proj_h4b">Version 2</p><br>
+                            <p class="proj_h5">CASTOR</p><br>
+                            <p class="proj_h6" style="color: var(--blue);">Finalist | Best Systems Paper, RSS 2018 </p>
+                        </div>
+                    </div>
+                    <div class="proj_column_triad" style="padding: 0px 0px">
+                        <img src="media/robot/robot_v3.jpg" class="triad_image" style="max-width: 100%;" />
+                        <br>
+                        <div class="proj_text_container_very_small">
+                            <p class="proj_h4b">Version 3</p><br>
+                            <p class="proj_h5">PUFFER</p>
+                            <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="proj_column_align_left">
+                    <p class="proj_h2b" style="margin: 0px 0px; padding: 0px 0px;">Compute Module</p>
+                    <hr class="compare">
+                </div>
+                <div class="proj_column_center" style="padding: 30px 30px;">
+                    <div class="proj_column_triad">
+                        <div class="proj_text_container_very_small">
+                            <p class="proj_h4b">Nvidia Tegra TK1</p><br>
+                            <p class="proj_h5">Quad-core 2.3GHz ARM Cortex-A15</p><br>
+                            <p class="proj_h5">Size: 127mm x 127mm x 25mm</p><br>
+                            <p class="proj_h5">DRAM: 2GB DDR3L 933MHz</p><br>
+                            <p class="proj_h5">Storage: 16GB fast eMMC</p>
+                            <p class="proj_h5">Power: 3 Watts</p>
+
+                        </div>
+                    </div>
+
+                    <div class="proj_column_triad">
+                        <div class="proj_text_container_very_small">
+                            <p class="proj_h4b">Intel Aero Board</p><br>
+                            <p class="proj_h5">Quad core 2.4 GHz Intel Atom x7-Z8700</p><br>
+                            <p class="proj_h5">Size: 88mm x 63mm x 20mm</p><br>
+                            <p class="proj_h5">DRAM: 2GB DDR3L 933MHz</p><br>
+                            <p class="proj_h5">Power: 2GB DDR3L 933MHz</p><br>
+                        </div>
+                    </div>
+                    <div class="proj_column_triad">
+                        <div class="proj_text_container_very_small">
+                            <p class="proj_h4b">Intel Up Board</p><br>
+                            <p class="proj_h5">Quad core 1.92 GHz Intel Atom x7-Z8350</p><br>
+                            <p class="proj_h5">Size: 85 mm × 56 mm x 20mm</p><br>
+                            <p class="proj_h5">DRAM: 4GB DDR3L 933Mhz</p><br>
+                            <p class="proj_h5">Storage: 32GB eMMC</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="proj_column_align_left">
+                    <p class="proj_h2b" style="margin: 0px 0px; padding: 0px 0px;">Manipulator</p>
+                    <hr class="compare">
+                </div>
+                <div class="proj_column_center" style="padding: 30px 30px;">
+                    <div class="proj_column_triad">
+                        <div class="proj_text_container_very_small">
+                            <p class="proj_h4b">uArm Metal</p><br>
+                            <p class="proj_h5">4 DOF / RC Servo Motors</p><br>
+                            <p class="proj_h5">Weight: 1.5 kg</p><br>
+                            <p class="proj_h5">Repeatability: 10mm</p><br>
+                            <p class="proj_h5">Max Lifting Weight : 500g</p><br>
+                            <p class="proj_h5">Work Range: 120 - 320 mm </p>
+
+                        </div>
+                    </div>
+                    <div class="proj_column_triad">
+                        <div class="proj_text_container_very_small">
+                            <p class="proj_h4b">uArm Swift Pro</p><br>
+                            <p class="proj_h5">4 DOF / Stepper Motors</p><br>
+                            <p class="proj_h5">Weight: 1.9 kg</p><br>
+                            <p class="proj_h5">Repeatability: 0.2mm</p><br>
+                            <p class="proj_h5">Max Lifting Weight : 500g</p><br>
+                            <p class="proj_h5">Work Range: 50mm - 320mm </p>
+                        </div>
+                    </div>
+                    <div class="proj_column_triad">
+                        <div class="proj_text_container_very_small">
+                            <p class="proj_h4b">uArm Swift Pro</p><br>
+                            <p class="proj_h5">4 DOF / Stepper Motors</p><br>
+                            <p class="proj_h5">Weight: 1.9 kg</p><br>
+                            <p class="proj_h5">Repeatability: 0.2mm</p><br>
+                            <p class="proj_h5">Max Lifting Weight : 500g</p><br>
+                            <p class="proj_h5">Work Range: 50mm - 320mm </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="proj_column_align_left">
+                <p class="proj_h2b" style="margin: 0px 0px; padding: 0px 0px;">Base Module</p>
+                <hr class="compare">
+            </div>
+            <div class="proj_column_center" style="padding: 30px 30px;">
+                <div class="proj_column_triad">
+                    <div class="proj_text_container_very_small">
+                        <p class="proj_h4b">Wild Thumper 4WD Aluminium chassis</p><br>
+                        <p class="proj_h5">Spiked 120mm-diameter wheels</p><br>
+                        <p class="proj_h5">Individual Twist Suspensions</p><br>
+                        <p class="proj_h5">60mm Ground clearance</p><br>
+                        <p class="proj_h5">3D Printed Motor Housings v1</p><br>
+                        <p class="proj_h5">Brushed DC motor with Encoders × 4 </p><br>
+                        <p class="proj_h5">Closed loop velocity control mode</p><br>
+                        <p class="proj_h5">Weight: ~ 2.8kg </p>
+                    </div>
+                </div>
+                <div class="proj_column_triad">
+                    <div class="proj_text_container_very_small">
+                        <p class="proj_h4b">Wild Thumper 4WD Aluminium chassis</p><br>
+                        <p class="proj_h5">Spiked 120mm-diameter wheels</p><br>
+                        <p class="proj_h5">Individual Twist Suspensions</p><br>
+                        <p class="proj_h5">50mm Ground clearance</p><br>
+                        <p class="proj_h5">3D Printed Motor Housings v1</p><br>
+                        <p class="proj_h5">Brushed DC motor with Encoders × 4 </p><br>
+                        <p class="proj_h5">Closed loop velocity control mode</p><br>
+                        <p class="proj_h5">Weight: ~ 3.5kg </p>
+                    </div>
+                </div>
+                <div class="proj_column_triad">
+                    <div class="proj_text_container_very_small">
+                        <p class="proj_h4b">Customized Wild Thumper 4WD Aluminium chassis</p><br>
+                        <p class="proj_h5">Spiked 120mm-diameter wheels</p><br>
+                        <p class="proj_h5">Individual Twist Suspensions</p><br>
+                        <p class="proj_h5">50mm Ground clearance</p><br>
+                        <p class="proj_h5">3D Printed Motor Housings v2</p><br>
+                        <p class="proj_h5">Brushed DC motor with Encoders × 4 </p><br>
+                        <p class="proj_h5">Closed loop velocity control mode</p><br>
+                        <p class="proj_h5">Weight: ~ 3.4kg </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="proj_column_align_left">
+                <p class="proj_h2b" style="margin: 0px 0px; padding: 0px 0px;">Power and Battery</p>
+                <hr class="compare">
+            </div>
+            <div class="proj_column_center" style="padding: 30px 30px;">
+                <div class="proj_column_triad">
+                    <div class="proj_text_container_very_small">
+                        <p class="proj_h5">7.4 DC LIPO Battery</p><br>
+                        <p class="proj_h5">DC-to-DC and Logic Level converters</p><br>
+                        <p class="proj_h5">Onboard Voltages: 5V/12V</p><br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="proj_column_triad">
+                    <div class="proj_text_container_very_small">
+                        <p class="proj_h5">Dual 7.4 DC LIPO Batteries</p><br>
+                        <p class="proj_h5">DC-to-DC and Logic Level converters</p><br>
+                        <p class="proj_h5">Onboard Voltages: 5V/12V</p><br>
+                        <p class="proj_h5">Power Monitoring</p><br>
+                        <p class="proj_h5">Automatic Shutdown and Restart between battery replacements</p><br>
+                    </div>
+                </div>
+                <div class="proj_column_triad">
+                    <div class="proj_text_container_very_small">
+                        <p class="proj_h5">Dual 7.4 DC LIPO Batteries</p><br>
+                        <p class="proj_h5">DC-to-DC and Logic Level converters</p><br>
+                        <p class="proj_h5">Onboard Voltages: 5V/12V</p><br>
+                        <p class="proj_h5">Power Monitoring Circuit</p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="proj_column_align_left">
+                <p class="proj_h2b" style="margin: 0px 0px; padding: 0px 0px;">Sensors</p>
+                <hr class="compare">
+            </div>
+            <div class="proj_column_center" style="padding: 30px 30px;">
+                <div class="proj_column_triad">
+                    <div class="proj_text_container_very_small">
+                        <p class="proj_h5">Wheel Encoders 9600 counts/revolution </p><br>
+                        <p class="proj_h5">April Tag for Localization</p><br>
+                        <p class="proj_h5">Overhead Kinect v2 Camera</p><br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="proj_column_triad">
+                    <div class="proj_text_container_very_small">
+                        <p class="proj_h5">Wheel Encoders 9600 counts/revolution </p><br>
+                        <p class="proj_h5">April Tag for Localization</p><br>
+                        <p class="proj_h5">Power Monitoring Circuits</p><br>
+                        <p class="proj_h5">IMU</p><br>
+                        <p class="proj_h5">Realsense D415 Depth Camera</p><br>
+                        <p class="proj_h5">VGA Camera</p><br>
+                        <p class="proj_h5">Overhead Kinect v2 Camera</p><br>
+                    </div>
+                </div>
+                <div class="proj_column_triad">
+                    <div class="proj_text_container_very_small">
+                        <p class="proj_h5">Wheel Encoders 9600 counts/revolution </p><br>
+                        <p class="proj_h5">April Tag for Localization</p><br>
+                        <p class="proj_h5">Power Monitoring Circuits</p><br>
+                        <p class="proj_h5">IMU</p><br>
+                        <p class="proj_h5">Realsense D415 Depth Camera</p><br>
+                        <p class="proj_h5">VGA Camera</p><br>
+                        <p class="proj_h5">Overhead Kinect v2 Camera</p><br>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project_card4">
+            <div class="proj_column_center">
+                <p class="proj_h1">End Effectors</p><br>
+                <p class="proj_h4">The robots are equipped with different end-effectors and camera modules based on
+                    their functionality. A gripper to handle compliant bags, a suction cup to handle foam blocks and a
+                    custom 1DOF gripper to handle previously unseen stones.</p>
+                <br>
+            </div>
+        </div>
+
+
+        <div class="project_card6">
+            <div class="proj_column_align_left">
+                <p class="proj_h2b" style="margin: 0px 0px; padding: 0px 0px;">Bag Handler</p>
+                <hr class="compare">
+                <br>
+                <p class="proj_h4">The arm is modified to use a 1DOF generic gripper to pick up and deposit complaint
+                    bags. The overhead Kinect camera provides the location of the bags to the robot system. A pickup and
+                    deposit pose is calculated according to the robot design, environment and construction algorithm.
+                </p>
+            </div>
+
+            <div class="proj_column_left">
+                <img src="media/dars2019/bag_pickup.GIF" style="max-width: 85%;" />
+                <div class="proj_text_container_small">
+
+                </div>
+            </div>
+            <div class="proj_column_right">
+                <br><br><br>
+                <p class="proj_h3b">Detach Manuever</p><br>
+                <p class="proj_h4">Castor detaches its arm's servo motors when the gripper is close to the bag allowing
+                    the open gripper to fall over. When the gripper is closed, the deactivated arm joints provide
+                    compliance for a better grip. The arm motors are then re-attached to lift the bag up.</p>
+                <br><br><br>
+                <br><br><br>
+            </div>
+        </div>
+
+
+        <div class="project_card4" style="background-color: thistle;">
+            <div class="proj_column_align_left">
+                <p class="proj_h2b" style="margin: 0px 0px; padding: 0px 0px;">Foam Handler</p>
+                <hr class="compare">
+                <br>
+                <p class="proj_h4">The arm is modified to use a 1DOF generic gripper to pick up and deposit complaint
+                    bags. The overhead Kinect camera provides the location and size of the foams to the robot system. A
+                    pickup and deposit pose is calculated according to the robot design, environment and construction
+                    algorithm.
+                </p>
+            </div>
+
+            <div class="proj_column_left">
+                <img src="media/dars2019/foam_pickup.GIF" style="max-width: 85%;" />
+                <div class="proj_text_container_small">
+
+                </div>
+            </div>
+            <div class="proj_column_right">
+                <br><br><br>
+                <p class="proj_h2b">Visual servoing</p><br>
+                <p class="proj_h4">Puffer uses a OpenMV M7 Camera, fixed on the end-effector of the arm, to align its
+                    suction cup to the AprilTag on a foam block. A contact switch on the end-effector assists the pickup
+                    planning. After pickup, the suction cup is rotated to align the block's minor axis with the robot
+                    axis.</p>
+                <br><br><br>
+                <br><br><br>
+            </div>
+        </div>
+
+
+        <div class="project_card6" style="background-color: black;">
+            <div class="proj_column_align_left">
+                <p class="proj_h2bw" style="margin: 0px 0px; padding: 0px 0px;">Stone Handler</p>
+                <hr class="compare">
+                <br>
+                <p class="proj_h4w">A 1DOF compliant gripper was designed to pickup previously unseen stones. The stones
+                    were chosen such that are within the payload requirements.
+                </p>
+            </div>
+            <br>
+
+            <div class="proj_column_left">
+                <img src="media/robot/stone_crabber.jpg" style="max-width: 100%;" />
+                <div class="proj_text_container_small">
+
+                </div>
+            </div>
+            <div class="proj_column_right">
+                <br>
+                <p class="proj_h3bw">Design Limitations</p><br>
+                <p class="proj_h5w">The </p>
+                <p class="proj_h5bw" style="font-weight: 700;">Stone Crabber</p>
+                <p class="proj_h5w"> is designed in accordance to the power, the arm's payload and the motor's thermal
+                    limitations. A XL320 Servo Motor with a torque of 0.39N-m weighs 16.7 g, the VGA camera module
+                    weighs at 25 g and the gripper weighs around 40g. The effective payload is now reduced to 210 g, but
+                    is large enough to pick up assorted small-to-medium sized river pebble rocks. The motor controller
+                    provides an
+                    approx. current-based torque feedback that allows for the gripper to effectively grip a stone
+                    without
+                    overheating during long run times.
+                </p>
+                <br><br><br>
+                <br><br>
+            </div>
+
+            
+            <div class="proj_column_left" style="min-height: 400px;">
+                <br><br><br>
+                <br>
+                <p class="proj_h3bw">Gripper Prototype</p><br>
+                <p class="proj_h4w">Using styrofoam on the gripper fingers increases friction and allows for a much
+                    better grip.</p>
+                </p>
+            </div>
+            <div class="proj_column_right" style="min-height: 400px;">
+                <div class="video_container">
+                <iframe class="responsive-iframe" src=https://www.youtube.com/embed/Pgk87q7z_Uc frameborder=0
+                    allowfullscreen></iframe>
+            </div>
+            </div>
+            
+        <div class="proj_column_triad">
+            <img src="media/icra2020/gripper_render_1.PNG" class="triad_image" style="max-width: 90%;" />
+            <br>
+            <div class="proj_text_container_very_small">
+                <p class="proj_h4w">The fingers are </p>
+                <p class="proj_h4bw">curved </p>
+                <p class="proj_h4bw">while being </p>
+                <p class="proj_h4bw">flat and thin </p>
+                <p class="proj_h4w">near the pick-up points to scoop the object.</p>
+            </div>
+        </div>
+        <div class="proj_column_triad">
+            <img src="media/icra2020/gripper_render_2.PNG" class="triad_image" style="max-width: 90%;" />
+            <br>
+            <div class="proj_text_container_very_small">
+                <p class="proj_h4bw">Five parallel sub-fingers </p>
+                <p class="proj_h4w">are connected to the main rigid finger body through a flexure.</p>
+            </div>
+        </div>
+        <div class="proj_column_triad">
+            <img src="media/icra2020/gripper_bottom_view.PNG" class="triad_image" style="max-width: 90%;" />
+            <br>
+            <div class="proj_text_container_very_small">
+                <p class="proj_h4bw">The </p>
+                <p class="proj_h4bw">flexure joint </p>
+                <p class="proj_h4w">enhances compliance and increase friction after the initial grasping.
+                    <br><br>
+                </p>
+            </div>
+        </div>
+        <div class="proj_column_triad">
+            <img src="media/icra2020/stone_pickup.GIF" class="triad_image" style="max-width: 90%;" />
+            <br>
+            <div class="proj_text_container_very_small">
+                <p class="proj_h4bw">Stone Crabber </p>
+                <p class="proj_h4w">is a 1 DOF Pinch gripper designed to pick up stones.
+                </p>
+            </div>
+        </div>
+        <div class="proj_column_triad">
+            <img src="media/icra2020/stone_pickup_gripper_cam.GIF" class="triad_image" style="max-width: 90%;" />
+            <br>
+            <div class="proj_text_container_very_small">
+                <p class="proj_h4w">A downward-facing VGA </p>
+                <p class="proj_h4bw">gripper camera</p>
+                <p class="proj_h4w">is fixed on the end-effector of the arm.
+                </p>
+            </div>
+        </div>
+        <div class="proj_column_triad">
+            <img src="media/icra2020/stone_drop.GIF" class="triad_image" style="max-width: 90%;" />
+            <br>
+            <div class="proj_text_container_very_small">
+                <p class="proj_h4w">The object pose with the </p>
+                <p class="proj_h4bw">best "score" </p>
+                <p class="proj_h4w">is chosen as the deposition pose.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="project_card3">
+        <!-- <div class="proj_column_center" style="margin-bottom: 0px; padding-bottom:0px;">
+                    <p class="proj_h1">System Design</p>
+                    <br>
+                    <p class="proj_h3">
+                    </p>
+                    <br><br>
+            </div> -->
+
+        <div class="proj_column_left">
+            <img src="media/robot/node_architecture.jpg" style="max-width: 90%; border: 2px solid var(--gray);" />
+            <div class="proj_text_container_small">
+            </div>
+        </div>
+        <div class="proj_column_right">
+            <br><br><br>
+            <br><br><br>
+            <p class="proj_h2b">Node Architecture</p><br>
+            <p class="proj_h4">The robot system is designed atop the ROS architecture. It allows us to use open source packages 
+                like the move_base navigation package and the AprilTag fiducial detection algorithm, while promoting modularity 
+                in our code base as well. The node architecture depicts the minimal set of nodes used in all the projects developed 
+                thus far.
+            </p>
+            <br><br><br>
+            <br><br><br>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

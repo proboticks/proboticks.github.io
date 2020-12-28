@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+
+    <nav id="nav_bar">
+        <ul class="nav_bar_buttons">
+            <li><a onclick="project_bar()" href="#" id="research_button">Research</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#publications">Publications</a></li>
+            <li><a href="index.html#teaching">Teaching</a></li>
+            <li><a href="index.html#talks">Talks</a></li>
+        </ul>
+    </nav>
+    <nav id="project_nav_bar">
+        <ul id="project_bar_buttons" style="backdrop-filter: blur(15px);">
+            <div class="buttons_table">
+                <li><a href="coordinate.html"><img src="media/icons/coordinate.png"
+                            class="project_bar_icons" /><br>Coordinate</a></li>
+                <li><a href="stone.html"><img src="media/icons/stone.png" class="project_bar_icons" /><br>Stone</a>
+                </li>
+                <li><a href="multi.html"><img src="media/icons/multi.png" class="project_bar_icons" /><br>Mix</a>
+                </li>
+                <li><a href="bag.html"><img src="media/icons/bag.png" class="project_bar_icons" /><br>Bag</a></li>
+                <li><a href="drystacking.html"><img src="media/icons/wall.png"
+                            class="project_bar_icons" /><br>Dry-Stack</a>
+                </li>
+                <li><a href="robot.html"><img src="media/icons/robot.png" class="project_bar_icons" /><br>Robot</a>
+                </li>
+                <li><a href="sim.html"><img src="media/icons/sim.png" class="project_bar_icons" /><br>Simulator</a>
+                </li>
+            </div>
+        </ul>
+
+    </nav>
+
+
+
+    <!-- Home -->
+    <div class="page" id="home">
+        <div class="row">
+            <div class="center_column">
+                <!-- <img src="profile.png" alt="profile" id="profile" />
+                <br><br>
+                <p id="home_heading">Vivek Thangavelu</p>
+                <p id="home_heading_b">PhD Student, Cornell University</p> -->
+                <!-- <p id="home_heading_b">Tu/Th 9:30 - 10:50 | NSC 216</p> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="project_page">
+        <div class="project1">
+            <div class="project_card1">
+                <div class="proj_column_center">
+                    <p class="proj_h1">Autonomous Construction using Found Stones</p>
+                    <br>
+                    <a href="#movie">
+                        <p class="proj_h4">[ Watch Movie ]</Watch>
+                    </a></p>
+                    <br>
+                    <p class="proj_h3">We developed a specialized construction algorithm and robotic system that can
+                        autonomously build motion support structures with previously unseen objects.
+                    </p>
+                    <br><br>
+                    <img src="media/icra2020/robot_in_action2.jpg" class="center_img" style="max-width: 50%;" />
+                </div>
+            </div>
+
+            <div class="project_card6">
+                <div class="proj_column_center">
+                    <p class="proj_h2b">Raw Material</p>
+                    <br>
+                    <p class="proj_h3">The stone data set used in our experiments contains samples of decorative
+                        creek and pebble stones. </p>
+                    <br><br>
+                    <img src="media/icra2020/stone_samples.png" class="center_img" style="max-width: 90%;" />
+                    <br>
+                    <img src="media/icra2020/mass.png" class="multiple_center_img" style="max-width: 20%;" />
+                    <img src="media/icra2020/roundness.png" class="multiple_center_img" style="max-width: 20%;" />
+                    <img src="media/icra2020/elongation.png" class="multiple_center_img" style="max-width: 20%;" />
+                    <br>
+                    <p class="proj_h3">The characteristics of the stone dataset exhibits the extent of our system in
+                        the general sense of construction with stones. For example, once can compare our dataset with
+                        that of stones found on Mars. </p>
+                </div>
+            </div>
+
+            <div class="project_card1">
+                <div class="proj_column_center">
+                    <p class="proj_h2b">Deposition Planner</p>
+                    <br>
+                    <p class="proj_h3">The deposition planner utilizes simulations to incorporate the uncertainties in
+                        the world description and in the robot dynamics.
+                        A physics-based simulator is used for finding an initial set of physically stable poses which is
+                        refined through an action space reduction method.</p>
+                    <br><br>
+                    <img src="media/icra2020/filter_merged_cropped.png" class="center_img" style="max-width: 90%;" />
+                </div>
+
+                <!-- <div class="proj_column_left" style="width: 40%; max-width: 100%;">
+                    <p class="proj_h3">An approximate close stone mesh is generated using the noisy and incomplete data from the scanning sensor.</p>
+                </div>
+                <div class="proj_column_right" style="width: 60%; max-width: 100%;">
+                    <img src="media/icra2020/stone_mesh_generation.png" class="proj_img"/>
+                </div> -->
+
+            </div>
+
+            <div class="project_card2">
+                <div class="proj_column_center">
+                    <p class="proj_h2b">Robot Design</p><br>
+                    <p class="proj_h3">The robot is a low-cost mobile manipulator made from off-the-shelf components,
+                        capable of maneuvering over irregular terrain. </p>
+                    <br>
+                    <div class="proj_column_triad">
+                        <img src="media/icra2020/gripper_render_1.PNG" class="triad_image" style="max-width: 90%;" />
+                        <br>
+                        <div class="proj_text_container_very_small">
+                            <p class="proj_h4">The fingers are </p>
+                            <p class="proj_h4b">curved </p>
+                            <p class="proj_h4">while being </p>
+                            <p class="proj_h4b">flat and thin </p>
+                            <p class="proj_h4">near the pick-up points to scoop the object.</p>
+                        </div>
+                    </div>
+                    <div class="proj_column_triad">
+                        <img src="media/icra2020/gripper_render_2.PNG" class="triad_image" style="max-width: 90%;" />
+                        <br>
+                        <div class="proj_text_container_very_small">
+                            <p class="proj_h4b">Five parallel sub-fingers </p>
+                            <p class="proj_h4">are connected to the main rigid finger body through a flexure.</p>
+                        </div>
+                    </div>
+                    <div class="proj_column_triad">
+                        <img src="media/icra2020/gripper_bottom_view.PNG" class="triad_image" style="max-width: 90%;" />
+                        <br>
+                        <div class="proj_text_container_very_small">
+                            <p class="proj_h4">The </p>
+                            <p class="proj_h4b">flexure joint </p>
+                            <p class="proj_h4">enhances compliance and increase friction after the initial grasping.
+                                <br><br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="proj_column_triad">
+                        <img src="media/icra2020/stone_pickup.GIF" class="triad_image" style="max-width: 90%;" />
+                        <br>
+                        <div class="proj_text_container_very_small">
+                            <p class="proj_h4b">Stone Crabber </p>
+                            <p class="proj_h4">is a 1 DOF Pinch gripper designed to pick up stones.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="proj_column_triad">
+                        <img src="media/icra2020/stone_pickup_gripper_cam.GIF" class="triad_image"
+                            style="max-width: 90%;" />
+                        <br>
+                        <div class="proj_text_container_very_small">
+                            <p class="proj_h4">A downward-facing VGA </p>
+                            <p class="proj_h4b">gripper camera</p>
+                            <p class="proj_h4">is fixed on the end-effector of the arm.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="proj_column_triad">
+                        <img src="media/icra2020/stone_drop.GIF" class="triad_image" style="max-width: 90%;" />
+                        <br>
+                        <div class="proj_text_container_very_small">
+                            <p class="proj_h4">The object pose with the </p>
+                            <p class="proj_h4b">best "score" </p>
+                            <p class="proj_h4">is chosen as the deposition pose.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project_card4">
+                <div class="proj_column_center">
+                    <p class="proj_h2b">Experiments</p><br>
+                    <p class="proj_h3">We demonstrate the approach by running the system on a variety of terrains and
+                        with
+                        mixed
+                        materials, including both deformable and rigid components.
+                    </p>
+                    <br><br>
+                    <img src="media/dars2019/exp_1.png" class="center_img" style="max-width: 100%;" />
+                </div>
+            </div>
+
+            <div class="project_card6" style="background-color: black;" id="movie">
+                <div class="proj_column_center" style="padding: 60px 0px;">
+                    <!-- <p class="proj_h2b" style="color: white;">Watch Movie</p><br> -->
+                    <div class="video_container">
+                        <iframe class="responsive-iframe" src=https://www.youtube.com/embed/-gj1E9dZ6Cs frameborder=0
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+</body>
+
+</html>

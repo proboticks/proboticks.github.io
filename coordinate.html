@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+    <nav id="nav_bar">
+        <ul class="nav_bar_buttons">
+            <li><a onclick="project_bar()" href="#" id="research_button">Research</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#publications">Publications</a></li>
+            <li><a href="index.html#teaching">Teaching</a></li>
+            <li><a href="index.html#talks">Talks</a></li>
+        </ul>
+    </nav>
+    <nav id="project_nav_bar">
+        <ul id="project_bar_buttons" style="backdrop-filter: blur(15px);">
+            <div class="buttons_table">
+                <li><a href="coordinate.html"><img src="media/icons/coordinate.png"
+                            class="project_bar_icons" /><br>Coordinate</a></li>
+                <li><a href="stone.html"><img src="media/icons/stone.png" class="project_bar_icons" /><br>Stone</a>
+                </li>
+                <li><a href="multi.html"><img src="media/icons/multi.png" class="project_bar_icons" /><br>Mix</a>
+                </li>
+                <li><a href="bag.html"><img src="media/icons/bag.png" class="project_bar_icons" /><br>Bag</a></li>
+                <li><a href="drystacking.html"><img src="media/icons/wall.png"
+                            class="project_bar_icons" /><br>Dry-Stack</a>
+                </li>
+                <li><a href="robot.html"><img src="media/icons/robot.png" class="project_bar_icons" /><br>Robot</a>
+                </li>
+                <li><a href="sim.html"><img src="media/icons/sim.png" class="project_bar_icons" /><br>Simulator</a>
+                </li>
+            </div>
+        </ul>
+
+    </nav>
+
+
+
+    <!-- Home -->
+    <div class="page" id="home">
+        <div class="row">
+            <div class="center_column">
+                <!-- <img src="profile.png" alt="profile" id="profile" />
+                <br><br>
+                <p id="home_heading">Vivek Thangavelu</p>
+                <p id="home_heading_b">PhD Student, Cornell University</p> -->
+                <!-- <p id="home_heading_b">Tu/Th 9:30 - 10:50 | NSC 216</p> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="project_page">
+        <div class="project1">
+            <div class="project_card1" style="background-color: #333333;">
+                <div class="proj_column_center">
+                    <p class="proj_h1" style="color: #e9e9e9">Decentralized Collective Construction Techniques for Large
+                        Scale Structures <br>
+                        in Unstructured Environments</p>
+                    <br>
+                    <a href="#">
+                        <p class="proj_h4">[ Work in Progress ]
+                    </a></p>
+                    <br>
+                    <p class="proj_h3" style="color: #e9e9e9">Large scale construction projects in extraterrestrial
+                        environments require a team of construction robots that can autonomously and cooperatively
+                        operate in unstructured terrains. In this work, we investigate techniques required to design a
+                        decentralized coordination algorithm for a multi-robot construction system that is tasked to
+                        build a large rectilinear structure many times the size of an individual robot.
+                    </p>
+                    <br><br>
+                    <img src="media/coordinate/overview_3D.jpg" class="center_img" style="max-width: 90%;" />
+                    <br><br>
+                    <p class="proj_h4" style="color: #e9e9e9">The yellow region highlights the <i>Construction
+                            Region</i> and the green regions highlight the various <i>Building Sites</i>. The robots are
+                        initially deployed at a material production facility (blue) from where they find and build a
+                        <i>Global Access Structure</i> to the <i>Construction Region</i> using an initial crude map of
+                        the terrain. The <i>Global Access Path</i> is highlighted by thin red cylinders and the <i>Entry
+                            Point</i> to the construction region is highlighted by a thicker red cylinder. The blue,
+                        green, black and gray cylinders highlight the access paths to reach the various <i>Building
+                            Sites</i> from the <i>Entry Point</i>
+                    </p>
+
+                </div>
+
+                <!-- <div class="proj_column_center" style="background-color: black;">
+                    <p class="proj_h2w">Project Showcase</p>
+                    <br>
+                    <a href="#">
+                        <p class="proj_h4">[ Preliminary ]
+                    </a></p>
+                    <br>
+                    <div class="project_card6" style="background-color: black;" id="movie">
+                        <div class="proj_column_center" style="padding: 60px 0px;">
+                            <p class="proj_h2b" style="color: white;">Watch Movie</p><br>
+                            <div class="video_container">
+                                <iframe class="responsive-iframe" src=https://www.youtube.com/embed/e-w3ckcKtzU
+                                    frameborder=0 allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            </div>
+
+            <div class="project_card2">
+                <div class="proj_column_center">
+                    <p class="proj_h2b">Why build Navigable Structures?</p>
+                    <br><br>
+                    <p class="proj_h3b">Exploration: </p>
+                    <p class="proj_h3">Move to locations that were previously inaccessible</p> <br>
+                    <p class="proj_h3b">Large-scale operations:</p>
+                    <p class="proj_h3">Build structures many times the size of an individual agent</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
