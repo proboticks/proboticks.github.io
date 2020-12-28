@@ -2,7 +2,6 @@
 
 
 
-
 .rowtest {
   text-align:center;
   position: relative;
@@ -174,31 +173,57 @@
 }
 
 
-#journal_container, #conf_container, #talk_container {
-  /* background-color: brown; */
-  padding: 30px 5px 100px 5px;
-  max-width: 800px;
+#journal_container, #conf_container{
+  padding: 30px 5px 30px 5px;
+  overflow: hidden;
+
   /* background-image: linear-gradient(to right, rgb(253, 232, 198) , 10%, papayawhip); */
 }
 
-ul li::marker {
-  font-size: 1.5em;
+#talk_container  {
+  padding: 30px 5px 50px 5px;
+  overflow: hidden;
+
 }
 
 
 
 /* Clear floats after the columns */
-/* .row:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
+.row {
+  max-width: 100%;
+}
+
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .proj_column_left, .proj_column_right, .proj_column_triad,.proj_column_quad {
     width: 100%;
   }
+
+  nav ul {
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  
+  nav ul li {
+      display: inline-block;
+      float: none;
+  }
+
+  #home_heading {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  #home_heading_b {
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 5px;
+
+  }
+
+ 
 }
 
 .project_page {

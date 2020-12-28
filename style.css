@@ -127,6 +127,9 @@ body {
     margin: 0;
     /* padding: 0; */
     font-family: arial, sans serif;
+    min-width: 500px;
+    max-width:100%;
+
 }
 
 #nav_bar {
@@ -216,11 +219,15 @@ body {
   background-color: black;
 }
 
-  
-
 li {
-    float: left;
+  float: left;
 }
+
+ul.vert li {
+  float: none;
+  padding-bottom: 15px;
+}
+
 
 li a,
 li a:link,
@@ -244,10 +251,6 @@ li a:hover {
     text-transform: uppercase;
 }
 
-ul.pub li {
-  padding-bottom: 20px;
-}
-
 li a.icon {
   padding: 0px;
   display: inline;
@@ -256,18 +259,18 @@ li a.icon {
   padding-right: 1px;
 }
 
+ul li::marker {
+  font-size: 1.5em;
+}
+
+
 hr.compare {
   border: 1px solid var(--gray);
   border-radius: 5px;
   margin: 0px 0px;
 }
 
-/* 
-li a:active {
-    background-color: rgb(83, 11, 11);
-    color: rgb(20, 19, 19);
-    font-weight: 700;
-} */
+
 #home,
 #research,
 #publications,
