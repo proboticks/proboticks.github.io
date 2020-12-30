@@ -79,18 +79,6 @@
   display: none;
 }
 
-.videocolumn {
-  float: left;
-  width: 40%;
-  padding: 10px;
-}
-
-.videotextcolumn {
-  float: left;
-  width: 60%;
-  padding: 10px;
-}
-
 #profile {
   width: 200px;
   display: block;
@@ -119,7 +107,7 @@ body {
   margin: 0;
   /* padding: 0; */
   font-family: arial, sans serif;
-  min-width: 500px;
+  /* min-width: 500px; */
   max-width: 100%;
 }
 
@@ -430,7 +418,7 @@ p {
 .left_column {
   float: left;
   width: 30%;
-  padding-top: 20px;
+  padding-top: 120px;
   padding-right: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
@@ -439,15 +427,10 @@ p {
 .right_column {
   float: left;
   width: 70%;
-  padding-top: 30px;
-  padding-right: 50px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-right: 30px;
+  padding-bottom: 60px;
   padding-left: 30px;
-}
-
-.left_column_home {
-  float: left;
-  width: 0%;
 }
 
 
@@ -477,6 +460,10 @@ p {
   nav ul li {
       display: inline-block;
       float: none;
+  }
+
+  .nav_bar_buttons {
+    overflow-x: scroll;
   }
 }
 
