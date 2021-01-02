@@ -89,10 +89,10 @@
 .center_column {
   /* float: center; */
   width: 100%;
-  padding-top: 100px;
-  padding-right: 100px;
-  padding-bottom: 30px;
-  padding-left: 100px;
+  padding-top: 80px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  padding-left: 10px;
 }
 
 #border {
@@ -130,7 +130,7 @@ body {
 
 .nav_bar_buttons {
   list-style-type: none;
-  margin: 0;
+  margin: 0px -40px;
   overflow: hidden;
   /* padding: 0; */
   background-color: #2F3C48;
@@ -155,7 +155,7 @@ body {
   top: 42px;
   width: 100%;
   z-index: 9998 !important;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(15px);
 }
 
@@ -405,6 +405,10 @@ h6 {
   padding-top: 22px;
 }
 
+.home_row {
+  height: 425px;
+}
+
 p {
   color: #222222;
 }
@@ -444,26 +448,42 @@ p {
   .left_column {
     float: left;
     width: 100%;
-    /* padding: 30px; */
+    padding: 20px 30px;
   }
   .right_column {
     float: left;
     width: 100%;
-    /* padding: 20px; */
+    padding: 10px 30px;
   }
-
-  nav ul {
-    overflow-x: scroll;
-    white-space: nowrap;
-  }
+  
   
   nav ul li {
       display: inline-block;
       float: none;
   }
 
+  nav ul {
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+
   .nav_bar_buttons {
     overflow-x: scroll;
+    white-space: nowrap;
+  }
+
+  #project_bar {
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+
+  #project_bar .buttons_table li {
+    display: inline-block;
+    text-align:center;
+  }
+
+  .home_row {
+    height: 400px;
   }
 }
 
