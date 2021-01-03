@@ -3,7 +3,7 @@ $(function() {
         var target = $(this.hash);
         if (target.length) {
             $("html, body").animate({
-                    scrollTop: target.offset().top
+                    scrollTop: target.offset().top - 180
                 },
                 600
             );
