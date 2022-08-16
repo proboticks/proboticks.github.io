@@ -398,11 +398,28 @@ h6 {
   font-style: normal;
   font-variant: normal;
   line-height: 20px;
-  font-size: 25px;
+  font-size: 23px;
   /* padding-left: 10px; */
   text-align: center;
   z-index: 3;
-  padding-top: 22px;
+  padding-top: 14px;
+}
+
+#home_heading_c {
+  font-family: Muli;
+  /* font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */
+  /* font-weight: 900; */
+  color: #d7d8d7;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 20px;
+  font-size: 18px;
+  /* padding-left: 10px; */
+  text-align: center;
+  z-index: 3;
+  padding-top: 14px;
+  margin: auto;
+  max-width: 650px;
 }
 
 .home_row {
@@ -507,6 +524,6 @@ td {
   }
 
   .home_row {
-    height: 400px;
+    height: 515px;
   }
 }
