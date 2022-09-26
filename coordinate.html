@@ -40,7 +40,7 @@
         <ul id="project_bar_buttons" style="backdrop-filter: blur(15px);">
             <div class="buttons_table">
                 <li><a href="coordinate.html"><img src="media/icons/coordinate.png"
-                            class="project_bar_icons" /><br>Coordinate</a></li>
+                            class="project_bar_icons" /><br>Ongoing Work</a></li>
                 <li><a href="stone.html"><img src="media/icons/stone.png" class="project_bar_icons" /><br>Stone</a>
                 </li>
                 <li><a href="multi.html"><img src="media/icons/multi.png" class="project_bar_icons" /><br>Mix</a>
@@ -81,10 +81,7 @@
                         Scale Structures <br>
                         in Unstructured Environments</p>
                     <br>
-                    <p class="proj_h4" style="color: gold"> Work in Progress</p><br>
-                    <a href="sim.html">
-                        <p class="proj_h4">[ Simulation Framework ]
-                    </a></p>
+                    <p class="proj_h3b" style="color: gold"> Work in Progress</p><br>
                     <br>
                     <p class="proj_h3" style="color: #e9e9e9">Large scale construction projects in extraterrestrial
                         environments require a team of construction robots that can autonomously and cooperatively
@@ -93,21 +90,39 @@
                         build a large rectilinear structure many times the size of an individual robot.
                     </p>
                     <br><br>
-                    <img src="media/coordinate/overview_3D.jpg" class="center_img" style="max-width: 90%;" />
-                    <br><br>
-                    <p class="proj_h4" style="color: #e9e9e9">The yellow region highlights the <i>Construction
-                            Region</i> and the green regions highlight the various <i>Building Sites</i>. The robots are
-                        initially deployed at a material production facility (blue) from where they find and build a
-                        <i>Global Access Structure</i> to the <i>Construction Region</i> using an initial crude map of
-                        the terrain. The <i>Global Access Path</i> is highlighted by thin red cylinders and the <i>Entry
-                            Point</i> to the construction region is highlighted by a thicker red cylinder. The blue,
-                        green, black and gray cylinders highlight the access paths to reach the various <i>Building
-                            Sites</i> from the <i>Entry Point</i>
-                    </p>
 
+                    <br>
+                    <div class="video_container">
+                        <iframe class="responsive-iframe" src=https://www.youtube.com/embed/_SSWPWFQrRc frameborder=0
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
+
+                <div class="proj_column_align_left" style="padding-top:10px;">
+                    <p class="proj_h4" style="color: #e9e9e9">
+                        Let's say, in an unstructured environment, we want to build a barrier target structure as shown
+                        here. This structure can be decomposed into a robot deposition path where the center of this
+                        path can then be represented as a simple 1D height map. <br><br>
+
+                        The intersection of markers on the path and the different levels of the target structure
+                        represent the various goals a robot needs to reach by depositing material along its path thereby
+                        constructing navigable substructures. <br><br>
+
+                        We can begin the construction process with 3 robots, each starting at a specific entry point to
+                        the structure. The robots deposit material (shown in red) in order to reach their various
+                        navigation goals and also keep track of the structure state. <br><br>
+
+                        Each robot performs this process independently and the reference map provides a compact way to
+                        record and communicate their progress to other robots. Distribution of tasks takes place as a
+                        result of local interactions and the system may be scaled at any time during the construction
+                        process. Thus, the entire target structure may be constructed in a decentralized manner. <br>
+
+                    </p>
+                </div>
+
             </div>
         </div>
+
 
         <div class="project_card3">
             <p class="proj_h2b">Motivation</p>
@@ -133,13 +148,58 @@
             <br><br>
             <div class="proj_column_align_left" style="padding-top:0px;">
                 <p class="proj_h3b">Exploration: </p>
-                <p class="proj_h3">Move to locations that were previously inaccessible</p> <br>
+                <p class="proj_h3">Move to locations that were previously inaccessible</p><br>
                 <p class="proj_h3b">Large-scale operations:</p>
                 <p class="proj_h3">Build structures many times the size of an individual agent</p>
             </div>
         </div>
 
-    </div>
+        <div class="project_card4">
+            <p class="proj_h2b">Robot System</p>
+            <br><br>
+            <div class="proj_column_center">
+                <div class="row mx-auto">
+                    <div class="col-sm-8">
+                        <div class="row h-100 mx-auto">
+                            <div class="my-auto">
+                                <img src="media/carousel/4.jpg" style="height:250px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="row h-100 mx-auto">
+                            <div class="my-auto">
+                                <p class="proj_h4"> A newer, modular and self contained robot system that can
+                                    temporarily store
+                                    stones for future construction tasks. The picture depicts a robot design concept.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mx-auto">
+                    <div class="col-sm-4">
+                        <div class="row h-100 mx-auto">
+                            <div class="my-auto">
+                                <p class="proj_h4"> A compliant gripper allows the robot to pick up previously unknown,
+                                    found stones from a pile.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="row h-100 mx-auto">
+                            <div class="my-auto">
+                                <img src="media/coordinate/robot_gripper.jpg" class="center_img"
+                                    style="max-width: 80%;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </div>
 
 
