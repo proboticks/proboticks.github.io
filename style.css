@@ -485,6 +485,9 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
+.poster_img {
+  max-width: 50%;
+}
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -530,7 +533,7 @@ td {
   }
 
   .home_row {
-    height: 515px;
+    height: 560px;
   }
 
   #home_heading {
@@ -548,5 +551,9 @@ td {
     font-size: 12px;
     font-weight: 700;
     padding-top: 5px;
+  }
+
+  .poster_img {
+    max-width: 100%;
   }
 }
