@@ -80,7 +80,8 @@
 }
 
 #profile {
-  width: 200px;
+  width: 280px;
+  max-width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -430,7 +431,8 @@ h6 {
 }
 
 .home_row {
-  height: 425px;
+  padding-top: 60px;
+  height: 645px;
 }
 
 p {
@@ -490,7 +492,21 @@ td {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 880px) {
+  .home_row {
+    height: 760px;
+  }
+
+  #profile {
+    width: 225px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 700px) {
   /* nav {
       float: none;
       display: block;
@@ -533,9 +549,17 @@ td {
   }
 
   .home_row {
-    height: 560px;
+    height: 965px;
   }
 
+  #profile {
+    width: 225px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
   #home_heading {
     font-size: 20px;
     font-weight: 700;
