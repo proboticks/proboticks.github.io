@@ -3,7 +3,7 @@
 <!-- hi -->
 
 <head>
-    <title>Vivek Thangavelu | Cornell University</title>
+    <title>Vivek Thangavelu | Postdoc, CMU</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -30,12 +30,14 @@
 <body>
     <nav id="nav_bar">
         <ul class="nav_bar_buttons">
-            <li><a id="research_button">Research</a></li>
-            <li><a href="#home">Home</a></li>
+            <!-- <li><a id="research_button">Research</a></li> -->
+            <li><a  id="research_button" href="#home">Home</a></li>
             <li><a href="#publications">Publications</a></li>
+            <li><a href="#awards">Awards</a></li>
             <li><a href="#teaching">Teaching</a></li>
             <li><a href="#talks">Talks</a></li>
             <li><a href="#news">News</a></li>
+            <li><a href="#outreach">Outreach</a></li>
             <li><a href="#posters">Posters</a></li>
         </ul>
     </nav>
@@ -48,33 +50,39 @@
             </div>
             <div class="right_column">
                 <p id="home_heading">Vivek Thangavelu</p>
-                <p id="home_heading_b">PhD Student, Cornell University</p>
-                <p id="home_heading_c">My work focusses on designing <a href="ongoing.html">decentralized algorithms</a> for multi-robot systems that
-                    <a href="coordinate.html">build large-scale structures</a> in remote and unstructured environments, 
+                <p id="home_heading_b">Carnegie Bosch Postdoctoral Fellow, Carnegie Mellon University</p>
+                <p id="home_heading_c">
+                    I am currently building robot systems that can estimate <a href="ongoing.html">soil contaminant distributions</a>. An adaptive sampling algorithm iteratively samples at locations in the environment based on the sample
+                    information and environment model based on Gaussian Processes. A wheeled robot system is equipped
+                    with a Portable X-ray fluorescence analysis (PXRF) sensor and soil manipulation tools and deployed
+                    in various remote industrial sites
+                    <br><br>
+                    During my doctoral studies, my work focussed on designing <a href="ongoing.html">decentralized
+                        algorithms</a> for multi-robot systems that
+                    <a href="coordinate.html">build large-scale structures</a> in remote and unstructured environments,
                     while guaranteeing certain notions of progress and completion of the cooperative task.
-                    In a nutshell, ground-based mobile agents are tasked to build <a href="bag.html">traversable
+                    In a nutshell, a hetergenous team of ground-based mobile agents are tasked to build <a
+                        href="bag.html">traversable
                         structures</a> using a mixture of different types of building materials (<a
                         href="multi.html">rigid</a>, <a href="bag.html">compliant</a> and <a href="stone.html">found
                         stones</a>) which allows them to build structures
                     many times the size of an individual agent.
                     <br><br>
-                    I have experience working with both <a href="sim.html">simulation</a> and <a href="robot.html">real-world
-                        robot systems</a>. Currently I am designing the <a href="robot.html#tamias">4th version</a> of
-                    our robot,
-                    which is a custom-made self-contained mobile manipulator system capable of maneuvering over
-                    irregular terrain.
-                    A heterogenous multi-robot system will be tasked to build a large target structure (~8 times the
-                    size of a robot) using a variety of building materials (found stones, rubble and regolith bags).
-                    <br><br>
-                    My work is loosely categorized as below; please click on the icons for more information.
+                    I have experience working with both <a href="sim.html">simulation</a> and <a
+                        href="robot.html">real-world
+                        robot systems</a>.
+s
+                    My work is loosely organized as below; please click on the icons for more information.
                 </p>
             </div>
         </div>
-        <nav class="project_nav_bar" data-spy="affix" data-offset-top="600">
+        <nav class="project_nav_bar" data-spy="affix" data-offset-top="700">
             <ul id="project_bar">
                 <div class="buttons_table">
-                    <li><a href="ongoing.html"><img src="media/icons/ongoing.png"
-                                class="project_bar_icons" /><br>Ongoing</a></li>
+                    <li><a href="eco.html"><img src="media/icons/eco.png"
+                        class="project_bar_icons" /><br>Remediate</a></li>
+                    <!-- <li><a href="ongoing.html"><img src="media/icons/ongoing.png"
+                                class="project_bar_icons" /><br>Ongoing</a></li> -->
                     <li><a href="coordinate.html"><img src="media/icons/coordinate.png"
                                 class="project_bar_icons" /><br>Coordinate</a></li>
                     <li><a href="stone.html"><img src="media/icons/stone.png" class="project_bar_icons" /><br>Stone</a>
@@ -85,9 +93,9 @@
                     <li><a href="drystacking.html"><img src="media/icons/wall.png"
                                 class="project_bar_icons" /><br>Dry-Stack</a>
                     </li>
-                    <li><a href="robot.html"><img src="media/icons/robot.png" class="project_bar_icons" /><br>Robot</a>
+                    <li><a href="robot.html"><img src="media/icons/robot.png" class="project_bar_icons" /><br>Robots</a>
                     </li>
-                    <li><a href="sim.html"><img src="media/icons/sim.png" class="project_bar_icons" /><br>Simulator</a>
+                    <li><a href="sim.html"><img src="media/icons/sim.png" class="project_bar_icons" /><br>Simulation</a>
                     </li>
                 </div>
             </ul>
@@ -148,6 +156,8 @@
     </div>
 
     <div class="project_page">
+
+        
         <!-- Publications -->
         <div class="page" id="publications" style="background-color: papayawhip;">
             <div class="row">
@@ -156,6 +166,77 @@
                 </div>
 
                 <div class="right_column">
+                    <div id="journal_container">
+                        <p class="proj_h2b">Journals</p>
+                        <ul class="vert">
+                            <li>
+                                <p class="proj_h5b">Path to autonomous soil sampling and analysis by ground-based robots
+                                </p>
+
+                                <a href="https://www.sciencedirect.com/science/article/pii/S0301479724011162"
+                                    class="icon"><i class="fa fa-file" aria-hidden="true"></i></a>
+                                <br>
+                                <p class="proj_h6">Norby, J. </p>
+                                <p class="proj_h6">...</p>
+                                <p class="proj_h6b">, Thangavelu, V.</p>
+                                <p class="proj_h6">, et. al.</p>
+                                <br>
+                                <p class="proj_h6"> In Journal of Environmental Management.
+                                    (2024).
+                                </p>
+                            </li>
+                            <li>
+                                <p class="proj_h5b">An Addendum to NeBula: Towards Extending TEAM CoSTAR’s Solution to
+                                    Larger Scale Environments</p>
+
+                                <a href="https://ieeexplore.ieee.org/abstract/document/10643435" class="icon"><i
+                                        class="fa fa-file" aria-hidden="true"></i></a>
+                                <br>
+                                <p class="proj_h6">Morrell, B.</p>
+                                <p class="proj_h6">...</p>
+                                <p class="proj_h6b">, Thangavelu, V.</p>
+                                <p class="proj_h6">, et. al.</p>
+                                <br>
+                                <p class="proj_h6"> In IEEE Transactions on Field Robotics.
+                                    (2024).
+                                </p>
+                            </li>
+                            <li>
+                                <p class="proj_h5b">ACHORD: Communication-Aware Multi-Robot Coordination with
+                                    Intermittent Connectivity</p>
+                                <a href="#" class="icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                <a href="https://arxiv.org/pdf/2206.02245.pdf" class="icon"><i class="fa fa-file"
+                                        aria-hidden="true"></i></a>
+                                <br>
+                                <p class="proj_h6"> Saboia, M., Clark, L.,
+                                <p class="proj_h6b">Thangavelu, V., </p>
+                                <p class="proj_h6"> Edlund J., Otsu K., Correa G.,
+                                    Shankar Varadharajan V., Santamaria-Navarro A., <br>
+                                    Touma T., Bouman A., Melikyan H., Pailevanian T., Kim S., Archanian A.,
+                                    Stegun Vaquero T., Beltrame G., Napp N., <br> Pessin G. and Agha-mohammad A.</p>
+                                <br>
+                                <p class="proj_h6"> In 2022 IEEE Robotics and Automation Letters (RA-L 2022).
+                                </p>
+                            </li>
+                            <li>
+                                <p class="proj_h5b">Autonomous Multi-Material Construction with a Heterogeneous
+                                    Robot Team</p>
+                                <a href="https://www.youtube.com/watch?v=j6F0_CMXe7E" class="icon"><i
+                                        class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                <a href="https://www.researchgate.net/publication/335230908_Autonomous_Multi-Material_Construction_with_a_Heterogeneous_Robot_Team"
+                                    class="icon"><i class="fa fa-file" aria-hidden="true"></i></a>
+                                <br>
+                                <p class="proj_h6">Saboia, M., </p>
+                                <p class="proj_h6b">Thangavelu, V. </p>
+                                <p class="proj_h6">and Napp, N.</p>
+                                <br>
+                                <p class="proj_h6"> Robotics & Autonomous Systems Special issue: “Recent Advances in
+                                    Distributed Autonomous Robotic Systems, 2019.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
                     <div id="conf_container">
                         <p class="proj_h2b">Conference Papers</p>
                         <ul class="vert">
@@ -270,48 +351,48 @@
                         </ul>
                     </div>
 
-                    <div id="journal_container">
-                        <p class="proj_h2b">Journals</p>
-                        <ul class="vert">
-                            <li>
-                                <p class="proj_h5b">ACHORD: Communication-Aware Multi-Robot Coordination with
-                                    Intermittent Connectivity</p>
-                                <a href="#" class="icon"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                                <a href="https://arxiv.org/pdf/2206.02245.pdf" class="icon"><i class="fa fa-file"
-                                        aria-hidden="true"></i></a>
-                                <br>
-                                <p class="proj_h6"> Saboia, M., Clark, L.,
-                                <p class="proj_h6b">Thangavelu, V., </p>
-                                <p class="proj_h6"> Edlund J., Otsu K., Correa G.,
-                                    Shankar Varadharajan V., Santamaria-Navarro A., <br>
-                                    Touma T., Bouman A., Melikyan H., Pailevanian T., Kim S., Archanian A.,
-                                    Stegun Vaquero T., Beltrame G., Napp N., <br> Pessin G. and Agha-mohammad A.</p>
-                                <br>
-                                <p class="proj_h6"> In 2022 IEEE Robotics and Automation Letters (RA-L 2022).
-                                </p>
-                            </li>
-                            <li>
-                                <p class="proj_h5b">Autonomous Multi-Material Construction with a Heterogeneous
-                                    Robot Team</p>
-                                <a href="https://www.youtube.com/watch?v=j6F0_CMXe7E" class="icon"><i
-                                        class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                                <a href="https://www.researchgate.net/publication/335230908_Autonomous_Multi-Material_Construction_with_a_Heterogeneous_Robot_Team"
-                                    class="icon"><i class="fa fa-file" aria-hidden="true"></i></a>
-                                <br>
-                                <p class="proj_h6">Saboia, M., </p>
-                                <p class="proj_h6b">Thangavelu, V. </p>
-                                <p class="proj_h6">and Napp, N.</p>
-                                <br>
-                                <p class="proj_h6"> Robotics & Autonomous Systems Special issue: “Recent Advances in
-                                    Distributed Autonomous Robotic Systems, 2019.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
+                    
                 </div>
             </div>
         </div>
 
+         <!-- Awards -->
+         <div class="page" id="awards">
+            <div class="row">
+                <div class="left_column">
+                    <h1 class="floating-page-header">Awards/Recognition</h1>
+                </div>
+
+                <div class="right_column">
+                    <br>
+                    <ul class="vert">
+                        <li>
+                            <p class="proj_h3b">Carnegie Bosch Institute (CBI) Postdoctoral Fellowship</p><br>
+                            <p class="proj_h5">September 2023 - August 2025 | Carnegie Mellon University</p>
+                        </li>
+
+                        <li>
+                            <p class="proj_h3b">Robotics: Science and Systems (RSS) Pioneer</p><br>
+                            <p class="proj_h5">June 2022 | Cornell University</p>
+                        </li>
+
+                        <li>
+                            <p class="proj_h3b">Jacobs Fellowship</p><br>
+                            <p class="proj_h5">January 2020 | Cornell University</p>
+                        </li>
+
+                        <li>
+                            <p class="proj_h3b">Robotics: Science and Systems (RSS) Best Systems Paper Finalist</p><br>
+                            <p class="proj_h5">June 2018 | University at Buffalo</p>
+                        </li>
+
+                        <li>
+                            <p class="proj_h3b">Graduate Student Award of Excellence</p><br>
+                            <p class="proj_h5"> May 2017 | University at Buffalo</p>
+                        </li>
+                    </ul>
+                </div>
+        </div>
 
         <!-- Talks -->
         <div class="page" id="talks">
@@ -404,6 +485,7 @@
             </div>
         </div>
 
+       
 
         <!-- Teaching -->
         <div class="page" id="teaching">
@@ -452,108 +534,182 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+        </div>
 
-            <!-- News -->
-            <div class="page" id="news">
-                <div class="row">
-                    <div class="left_column">
-                        <h1 class="floating-page-header"">News</h1>
-                    </div>
-
-                    <div class=" right_column">
-                            <p class="proj_h4">Work featured in the Science article video: <a
-                                    href="http://robotics.sciencemag.org/content/4/28/eaau8479">“A review of
-                                    collective robotic construction”</a>
-                            </p>
-                            <div class="proj_column_center" style="padding: 10px 0px;">
-                                <div class="video_container">
-                                    <iframe class="responsive-iframe" src=https://www.youtube.com/embed/VaGSX5N0ns0
-                                        frameborder=0 allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            <p class="proj_h4"> Also in <a
-                                    href="http://www.buffalo.edu/news/releases/2018/12/025.html?utm_source=linkedin&amp;utm_medium=social&amp;utm_campaign=na_org_december__research_jd&amp;linkId=100000004486963">New
-                                    Atlas</a>, <a
-                                    href="https://www.asme.org/engineering-topics/articles/robotics/robots-use-environmental-clues-build-structures">Mechanical
-                                    Engineering magazine</a>, <a
-                                    href="https://www.wkbw.com/news/beavers-preparing-robots-for-space-exploration-what-is-going-on-at-the-ub-engineering-department">WKBW</a>,
-                                <a href="https://www.sciencedaily.com/releases/2018/06/180627160322.htm">Science
-                                    Daily</a>, <a
-                                    href="https://www.ecnmag.com/news/2018/06/rough-terrain-no-problem-beaver-inspired-autonomous-robot">Electronic
-                                    Component News</a>, <a
-                                    href="https://www.google.com/url?q=https://techxplore.com/news/2018-06-rough-terrain-problem-beaver-inspired-autonomous.html&amp;source=gmail&amp;ust=1546997497555000&amp;usg=AFQjCNFojqiVvNbDLOqtWiqJBVwLlOnGCw">Tech
-                                    Xplore</a>, <a
-                                    href="https://www.nanowerk.com/news2/robotics/newsid=50547.php">Nanowerk</a>,
-                                <a
-                                    href="https://www.google.com/url?q=http://www.techsite.io/p/857234&amp;source=gmail&amp;ust=1546997497555000&amp;usg=AFQjCNE8-S09x9onWrDtk9jruBJeHkam6g">Techsite</a>,
-                                <a href="https://www.ecnmag.com/topics/product-design-and-development">Product
-                                    Design &amp; Development</a>, <a
-                                    href="https://www.electronicsweekly.com/news/research-news/beaver-thinking-gets-robot-obstacles-2018-06/">Electronics
-                                    Weekly</a> and <a
-                                    href="https://www.futurity.org/autonomous-robots-beavers-1797602-2/">Futurity</a>
-                            </p>
-                            <br><br><br>
-
-                            <p class="proj_h4b">WKBW TV | Buffalo, NY </p><br>
-                            <p class="proj_h6">Published on Jul 3, 2018
-                            <p>
-                            <div class="proj_column_center" style="padding: 10px 0px;">
-                                <!-- <p class="proj_h2b" style="color: white;">Watch Movie</p><br> -->
-                                <div class="video_container">
-                                    <iframe class="responsive-iframe" src=https://www.youtube.com/embed/F5m9aVQ-gg0
-                                        frameborder=0 allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            <br><br><br>
-
-                            <p class="proj_h4b">University at Buffalo | News Center</p>
-                            <p class="proj_h4"><br><a
-                                    href="http://www.buffalo.edu/news/releases/2018/12/025.html?utm_source=linkedin&amp;utm_medium=social&amp;utm_campaign=na_org_december__research_jd&amp;linkId=100000004486963">
-                                    Twelve
-                                    ways UB researchers made groundbreaking discoveries — and headlines — in 2018</a>
-                                <br>
-                            </p>
-                            <p class="proj_h6"> Published on December 21, 2018</p>
-                            <div class="proj_column_center" style="padding: 10px 0px;">
-                                <!-- <p class="proj_h2b" style="color: white;">Watch Movie</p><br> -->
-                                <div class="video_container">
-                                    <iframe class="responsive-iframe" src=https://www.youtube.com/embed/c9hNP0AxsJE
-                                        frameborder=0 allowfullscreen></iframe>
-                                </div>
-                            </div>
-                    </div>
+        <!-- News -->
+        <div class="page" id="news">
+            <div class="row">
+                <div class="left_column">
+                    <h1 class="floating-page-header"">News</h1>
                 </div>
-            </div>
 
-            <div class="page" id="posters">
-                <div class="row">
-                    <div class="left_column">
-                        <h1 class="floating-page-header" style="color: ivory;">Posters</h1>
-                    </div>
+                <div class=" right_column">
+                        <p class="proj_h4b">Carnegie Mellon University | <a href="https://engineering.cmu.edu/news-events/news/2024/11/01-robotics-environmental-innovation.html">Newsletter</a></p>
 
-                    <div class=" right_column">
                         <div class="proj_column_center" style="padding: 10px 0px;">
-                            <p class="proj_h3bw">Dry Stacking Strategies for Autonomous Building</p><br>
-                            <p class="proj_h5w">NERC 2016</p><br><br>
-                            <a href="media/posters/dry_stacking.pdf"><img src="media/posters/dry_stacking.png"
-                                    class="poster_img"></a>
-                            <br><br><br><br><br>
-                            <p class="proj_h3bw">Robot System for Autonomous Construction using Found Irregular Objects
-                            </p>
-                            <br>
-                            <p class="proj_h5w">NEMS 2019</p><br><br>
-                            <a href="media/posters/poster_rover.pdf"><img src="media/posters/poster_rover.png"
-                                    class="poster_img"></a>
-                            <br><br><br><br><br>
-                            <p class="proj_h3bw">Multi-Robot Construction Systems in Unstructured Environments</p><br>
-                            <p class="proj_h5w">RSS 2022</p><br><br>
-                            <a href="media/posters/rss_pioneers.jpg"><img src="media/posters/rss_pioneers.png"
-                                    class="poster_img"></a>
+                            <div class="video_container">
+                                <iframe class="responsive-iframe" src=https://www.youtube.com/embed/sSsalqQzWrk
+                                    frameborder=0 allowfullscreen></iframe>
+                            </div>
                         </div>
+                        <br><br><br>
+
+                        <p class="proj_h4b">Science article video: <a
+                                href="http://robotics.sciencemag.org/content/4/28/eaau8479">“A review of
+                                collective robotic construction”</a>
+                        </p>
+                        <div class="proj_column_center" style="padding: 10px 0px;">
+                            <div class="video_container">
+                                <iframe class="responsive-iframe" src=https://www.youtube.com/embed/VaGSX5N0ns0
+                                    frameborder=0 allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <p class="proj_h4"> Also in <a
+                                href="http://www.buffalo.edu/news/releases/2018/12/025.html?utm_source=linkedin&amp;utm_medium=social&amp;utm_campaign=na_org_december__research_jd&amp;linkId=100000004486963">New
+                                Atlas</a>, <a
+                                href="https://www.asme.org/engineering-topics/articles/robotics/robots-use-environmental-clues-build-structures">Mechanical
+                                Engineering magazine</a>, <a
+                                href="https://www.wkbw.com/news/beavers-preparing-robots-for-space-exploration-what-is-going-on-at-the-ub-engineering-department">WKBW</a>,
+                            <a href="https://www.sciencedaily.com/releases/2018/06/180627160322.htm">Science
+                                Daily</a>, <a
+                                href="https://www.ecnmag.com/news/2018/06/rough-terrain-no-problem-beaver-inspired-autonomous-robot">Electronic
+                                Component News</a>, <a
+                                href="https://www.google.com/url?q=https://techxplore.com/news/2018-06-rough-terrain-problem-beaver-inspired-autonomous.html&amp;source=gmail&amp;ust=1546997497555000&amp;usg=AFQjCNFojqiVvNbDLOqtWiqJBVwLlOnGCw">Tech
+                                Xplore</a>, <a
+                                href="https://www.nanowerk.com/news2/robotics/newsid=50547.php">Nanowerk</a>,
+                            <a
+                                href="https://www.google.com/url?q=http://www.techsite.io/p/857234&amp;source=gmail&amp;ust=1546997497555000&amp;usg=AFQjCNE8-S09x9onWrDtk9jruBJeHkam6g">Techsite</a>,
+                            <a href="https://www.ecnmag.com/topics/product-design-and-development">Product
+                                Design &amp; Development</a>, <a
+                                href="https://www.electronicsweekly.com/news/research-news/beaver-thinking-gets-robot-obstacles-2018-06/">Electronics
+                                Weekly</a> and <a
+                                href="https://www.futurity.org/autonomous-robots-beavers-1797602-2/">Futurity</a>
+                        </p>
+                        <br><br><br>
+
+                        <p class="proj_h4b">WKBW TV | Buffalo, NY </p><br>
+                        <p class="proj_h6">Published on Jul 3, 2018
+                        </p>
+                        <div class="proj_column_center" style="padding: 10px 0px;">
+                            <!-- <p class="proj_h2b" style="color: white;">Watch Movie</p><br> -->
+                            <div class="video_container">
+                                <iframe class="responsive-iframe" src=https://www.youtube.com/embed/F5m9aVQ-gg0
+                                    frameborder=0 allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <br><br><br>
+
+                        <p class="proj_h4b">University at Buffalo | News Center</p>
+                        <p class="proj_h4"><br><a
+                                href="http://www.buffalo.edu/news/releases/2018/12/025.html?utm_source=linkedin&amp;utm_medium=social&amp;utm_campaign=na_org_december__research_jd&amp;linkId=100000004486963">
+                                Twelve
+                                ways UB researchers made groundbreaking discoveries — and headlines — in 2018</a>
+                            <br>
+                        </p>
+                        <p class="proj_h6"> Published on December 21, 2018</p>
+                        <div class="proj_column_center" style="padding: 10px 0px;">
+                            <!-- <p class="proj_h2b" style="color: white;">Watch Movie</p><br> -->
+                            <div class="video_container">
+                                <iframe class="responsive-iframe" src=https://www.youtube.com/embed/c9hNP0AxsJE
+                                    frameborder=0 allowfullscreen></iframe>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Outreach -->
+        <div class="page" id="outreach">
+            <div class="row">
+                <div class="left_column">
+                    <h1 class="floating-page-header">Outreach</h1>
+                </div>
+
+                <div class="right_column">
+                    <br>
+                    <ul class="vert">
+                        <li>
+                            <p class="proj_h3b">Paths to AI Research (PAIR)</p><br>
+                            <p class="proj_h5"> Mentor | November 2023 - Present | Pittsburgh, PA</p>
+                        </li>
+
+                        <li>
+                            <p class="proj_h3b">Pittsburgh Robotics Network Discovery Day</p><br>
+                            <p class="proj_h5"> Exhibitor | November 2023 | Pittsburgh, PA </p>
+                        </li>
+
+                        <li>
+                            <p class="proj_h3b">Robot Groundbreaking Demo for Robotics Innovation Center</p><br>
+                            <p class="proj_h5"> Volunteer | December 2023 | Pittsburgh, PA</p>
+                        </li>
+
+                        <li>
+                            <p class="proj_h3b">Research Education and Activities for Community Teachers (REACT)</p><br>
+                            <p class="proj_h5"> Volunteer | Summer 2022 | Cornell, NY</p>
+                        </li>
+
+                        <li>
+                            <p class="proj_h3b">UB Robotics Day</p><br>
+                            <p class="proj_h5"> Volunteer | Summer 2018, Summer 2019 | University at Buffalo, NY</p>
+                        </li>
+
+                        <li>
+                            <p class="proj_h3b">Robotics Workshop</p><br>
+                            <p class="proj_h5"> Coordinator | Fall 2018 | University at Buffalo, NY</p>
+                        </li>
+
+                        <li>
+                            <p class="proj_h3b">Engineering Design Camp</p><br>
+                            <p class="proj_h5"> Program Director and Instructor | August 2018 | University at Buffalo, NY</p>
+                        </li>
+
+                        <li>
+                            <p class="proj_h3b">Digital Electronics Workshop</p><br>
+                            <p class="proj_h5"> Volunteer | July 2018 | University at Buffalo, NY</p>
+                        </li>
+
+                        <li>
+                            <p class="proj_h3b">Pre-college Mentorship</p><br>
+                            <p class="proj_h5"> Mentor | April 2018 - July 2018 | University at Buffalo, NY</p>
+                        </li>
+
+                        <li>
+                            <p class="proj_h3b">LEGO Robotics Workshop</p><br>
+                            <p class="proj_h5"> Volunteer | August 2016 | Canisius College, NY</p>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+        <!-- Posters -->
+        <div class="page" id="posters">
+            <div class="row">
+                <div class="left_column">
+                    <h1 class="floating-page-header" style="color: ivory;">Posters</h1>
+                </div>
+
+                <div class=" right_column">
+                    <div class="proj_column_center" style="padding: 10px 0px;">
+                        <p class="proj_h3bw">Dry Stacking Strategies for Autonomous Building</p><br>
+                        <p class="proj_h5w">NERC 2016</p><br><br>
+                        <a href="media/posters/dry_stacking.pdf"><img src="media/posters/dry_stacking.png"
+                                class="poster_img"></a>
+                        <br><br><br><br><br>
+                        <p class="proj_h3bw">Robot System for Autonomous Construction using Found Irregular Objects
+                        </p>
+                        <br>
+                        <p class="proj_h5w">NEMS 2019</p><br><br>
+                        <a href="media/posters/poster_rover.pdf"><img src="media/posters/poster_rover.png"
+                                class="poster_img"></a>
+                        <br><br><br><br><br>
+                        <p class="proj_h3bw">Multi-Robot Construction Systems in Unstructured Environments</p><br>
+                        <p class="proj_h5w">RSS 2022</p><br><br>
+                        <a href="media/posters/rss_pioneers.jpg"><img src="media/posters/rss_pioneers.png"
+                                class="poster_img"></a>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
 

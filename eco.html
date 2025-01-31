@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="main.js"></script>
+
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    
+</head>
+
+<body>
+
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+        <nav id="nav_bar">
+            <ul class="nav_bar_buttons">
+                <li><a onclick="project_bar()" href="#" id="research_button">Research</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="index.html#awards">Awards</a></li>
+                <li><a href="index.html#teaching">Teaching</a></li>
+                <li><a href="index.html#talks">Talks</a></li>
+                <li><a href="index.html#news">News</a></li>
+                <li><a href="index.html#news">Outreach</a></li>
+                <li><a href="index.html#news">Posters</a></li>
+            </ul>
+        </nav>
+        <nav id="project_nav_bar">
+            <ul id="project_bar_buttons" style="backdrop-filter: blur(15px);">
+                <div class="buttons_table">
+                    <li><a href="eco.html"><img src="media/icons/eco.png"
+                        class="project_bar_icons" /><br>Remediate</a></li>
+                    <li><a href="coordinate.html"><img src="media/icons/coordinate.png"
+                                class="project_bar_icons" /><br>Coordinate</a></li>
+                    <li><a href="stone.html"><img src="media/icons/stone.png" class="project_bar_icons" /><br>Stone</a>
+                    </li>
+                    <li><a href="multi.html"><img src="media/icons/multi.png" class="project_bar_icons" /><br>Mix</a>
+                    </li>
+                    <li><a href="bag.html"><img src="media/icons/bag.png" class="project_bar_icons" /><br>Bag</a></li>
+                    <li><a href="drystacking.html"><img src="media/icons/wall.png"
+                                class="project_bar_icons" /><br>Dry-Stack</a>
+                    </li>
+                    <li><a href="robot.html"><img src="media/icons/robot.png" class="project_bar_icons" /><br>Robot</a>
+                    </li>
+                    <li><a href="sim.html"><img src="media/icons/sim.png" class="project_bar_icons" /><br>Simulator</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Home -->
+    <div class="page" id="home"></div>
+
+    <div class="project_page">
+        <div class="project1">
+            <div class="project_card2" style="background-color: #daf0da;">
+                <div class="proj_column_center">
+                    <p class="proj_h1">Autonomous In-Situ Soil Sampling Using a Ground-Based Robotic System</p>
+                    <br>
+                    <a href="#movie">
+                        <p class="proj_h4">[ Watch Movie ]</Watch>
+                    </a></p>
+                    <br>
+                    <p class="proj_h3"> An adaptive sampling alrogithm to find the next best sampling location, and a system integration framework that enables the robotic platform to collect and analyze soil samples efficiently in unknown environments.
+                    </p>
+                    <br>
+                    <img src="media/remediate/patrick_sensing.png" class="center_img" style="max-width: 60%;"/>
+                </div>
+            </div>
+
+            
+            <div class="project_card4" style="background-color: #ECEEEF">
+                <div class="proj_column_center">
+                    <p class="proj_h4">A robot when released into an environment should autonomously generate a contaminant distribution of the unknown environment</p>
+                    <br><br>
+                    <img src="media/remediate/goal.png" class="center_img" style="max-width: 100%;" />
+                    <br><br>
+                </div>
+            </div>
+
+
+            <div class="project_card4">
+                <div class="row mx-auto">
+                    <div class="col-sm-4">
+                        <div class="row h-100 mx-auto">
+                            <div class="my-auto">
+                                <img src="media/remediate/pxrf.png" style="max-width: 100%;" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="row h-100 mx-auto">
+                            <div class="my-auto">
+                                <p class="proj_h4">The </p>
+                                <p class="proj_h4b">Portable X-ray Fluorescence (PXRF) </p>
+                                <p class="proj_h4">sensor provides the concentration of elements in a sample, heavier than chlorine in the periodic table. It needs to have close contact with the sample and each sensor reading is expensive. Each reading takes around 45 secs to complete, and is highly local and precise.
+                                This is in contrast to other class of sensors like a camera or a lidar, that gives you a lot of information in a fraction of a second over a large spatial region.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project_card2">
+                <div class="row mx-auto">
+                    <div class="col-sm-6">
+                        <div class="row h-100 mx-auto">
+                            <div class="my-auto">
+                                <p class="proj_h4">The </p>
+                                <p class="proj_h4b">Adaptive Sampling </p>
+                                <p class="proj_h4">algorithm uses Gaussian Processes to model the contaminant distribution. The next location to sample is selected based on a reward function:
+                                </p>
+                                <img src="media/remediate/equation.png" style="max-width: 90%;" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="row h-100 mx-auto">
+                            <div class="my-auto">
+                                <img src="media/remediate/gp.png" style="max-width: 100%;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project_card4" style="background-color: white">
+                <div class="proj_column_center">
+                    <p class="proj_h2b">Simulation and Metrics</p><br>
+                    <p class="proj_h4">A simulator was developed to aid in the design and comparison of adaptive algorithms within a controlled simulation environment. The Earth Mover's Distance (EMD) was to quantify the error between the predicted and actual distributions. It measures the dissimilarity between two distributions by quantifying the "amount of work" needed to transform one distribution into the other.</p>
+                    <br><br>
+                    <img src="media/remediate/results.png" class="center_img" style="max-width: 100%;" />
+                    <br><br>
+                    <p class="proj_h5">
+                    In the image above, the adaptive sampling algorithm (0.0368) has a lower EMD value than that of grid Sampling (0.0972).</p>
+                </div>
+            </div>
+
+            <div class="project_card2" id="movie">
+                <div class="proj_column_center">
+                    <p class="proj_h2b"> Patrick in a field </p><br>
+                    <img src="media/remediate/patrick_sensing.gif" class="center_img"/>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+</body>
+
+</html>
