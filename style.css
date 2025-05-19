@@ -541,7 +541,7 @@ td {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 880px) {
   .home_row {
-    height: 760px;
+    height: 1000px;
   }
 
   #profile {
@@ -599,7 +599,7 @@ td {
   }
 
   .home_row {
-    height: 965px;
+    height: 1200px;
   }
 
   #profile {
